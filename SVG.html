@@ -1,0 +1,116 @@
+<html>
+<head></head>
+<body>
+
+<svg width='1800' height='900'>
+<rect id="sky" x="0" y="0" width='1800' height='900' fill="skyblue"></rect>
+<rect x="900" y="450" width='900' height='600' style='fill:rgb(0,0,0);' />
+<rect x="1000" y="250" width='90' height='600' style='fill:rgb(0,0,0);' />
+<rect id="l1" x="1350" y="550" width='100' height='100' style='fill:rgb(250,230,15);' />
+<rect id="l2" x="1150" y="550" width='100' height='100' style='fill:rgb(250,230,15);' />
+<rect x="995" y="550" width='10' height='100' style='fill:rgb(0,0,0);' />
+<rect x="1195" y="550" width='10' height='100' style='fill:rgb(0,0,0);' />
+<rect x="995" y="595" width='500' height='10' style='fill:rgb(0,0,0);' />
+<circle id="smoke1" r="40" cx="1000" cy="250" fill="black" stroke="black"  />
+<circle id="smoke2" r="40" cx="1000" cy="225" fill="black" stroke="black"  />
+<circle id="smoke3" r="40" cx="1000" cy="200" fill="black" stroke="black"  />
+<circle id="smoke4" r="40" cx="1000" cy="175" fill="black" stroke="black"  />
+<rect "x="0" y="810" width='1800' height='600' style='fill:rgb(0,255,0);' />
+
+<animate 
+           xlink:href="#sky" 
+           attributeName="fill" 
+           values="rgb(0,0,50);rgb(164,255,255);rgb(160,255,255) ;rgb(0,0,50)" 
+           dur="10s"
+           repeatCount="10000"
+/>
+
+
+<animate 
+           xlink:href="#l1"
+           attributeName="fill"
+           values="rgb(250,230,15);rgb(0,0,0);rgb(250,230,15)"
+           dur="10s"
+           repeatCount="10000"
+/>
+
+<animate 
+           xlink:href="#l2"
+           attributeName="fill"
+           values="rgb(250,230,15);rgb(0,0,0);rgb(250,230,15)"
+           dur="10s"
+           repeatCount="10000"
+/>
+
+<animate 
+           xlink:href="#smoke1"
+           attributeName="cx"
+           values="1030;1055;1030"
+           dur="1.4s"
+           repeatCount="10000"
+/>
+
+<animate 
+           xlink:href="#smoke2"
+           attributeName="cx"
+           values="1080;1030;1080"
+           dur="1.5s"
+           repeatCount="10000"
+/>
+
+<animate 
+           xlink:href="#smoke3"
+           attributeName="cx"
+           values="1100;1070;1100"
+           dur="1.8s"
+           repeatCount="10000"
+/>
+<animate 
+           xlink:href="#smoke1"
+           attributeName="fill"
+           values="rgb(0,0,0);rgb(60,60,60);rgb(0,0,0)"
+           dur="2s"
+           repeatCount="10000" 
+/>
+
+<animate 
+           xlink:href="#smoke4"
+           attributeName="cx"
+           values="1070;1030;1070"
+           dur="1.25s"
+           repeatCount="10000"
+/>
+<animate 
+           xlink:href="#smoke3"
+           attributeName="fill"
+           values="rgb(0,0,0);rgb(60,60,60);rgb(0,0,0)"
+           dur="2s"
+           repeatCount="10000"
+/>
+<animate 
+           xlink:href="#smoke4"
+           attributeName="fill"
+           values="rgb(60,60,60);rgb(0,0,0);rgb(60,60,60)"
+           dur="2s"
+           repeatCount="10000"
+/>
+
+<animate 
+           xlink:href="#l1" 
+           attributeName="fill" 
+           begin="click" dur="2s" 
+           repeatCount="1"
+           
+/>
+
+<animate 
+           xlink:href="#l2" 
+           attributeName="fill" 
+           begin="click" dur="2s" 
+           repeatCount="1"
+           
+/>
+
+</svg>
+</body>
+</html>
